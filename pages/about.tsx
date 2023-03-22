@@ -16,7 +16,7 @@ const About: NextPage<Props> = ({ data }) => {
 
   return (
     <Layout locale={locale as string} title={s.title} desc={s.desc}>
-      <Header locale={locale as string} title="About" className="bg-[url(https://source.unsplash.com/xhGMQ_nYWqU/1280x)]" active='about' />
+      <Header locale={locale as string} title="About" className="" active='about' />
       <WhyUs locale={locale as string} />
     </Layout>
   )

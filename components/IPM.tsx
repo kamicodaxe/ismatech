@@ -3,9 +3,10 @@ import { useMemo } from "react"
 
 interface Props {
     locale: string
+    extended?: boolean
 }
 
-const IPM: React.FC<Props> = ({ locale }) => {
+const IPM: React.FC<Props> = ({ locale, extended }) => {
 
     const lang = useMemo(() => (locale || '').toLowerCase().includes('fr'), [locale]) ? 'fr' : 'en'
     const s = strings[lang]
@@ -14,7 +15,7 @@ const IPM: React.FC<Props> = ({ locale }) => {
         <section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100 section-base">
 
             {/* :TITLE CONTAINER */}
-            <div className="mx-auto max-w-3xl space-y-3 text-center">
+            <div className={`mx-auto max-w-3xl space-y-3 text-center ` + (extended ? 'py-16' : '')}>
                 {/* ::Title */}
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-wide relative before:w-16 before:h-16  ">
                     <span className="h-12 w-12 bg-primary absolute rounded-full left-0" />

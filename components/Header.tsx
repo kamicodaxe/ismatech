@@ -23,9 +23,8 @@ const HomeHeader: React.FC<Props> = ({ active, locale, className, title, navBarO
     const CONTAINER_CLASS_NAME = `bg-cover bg-coolGray-800 text-coolGray-100 bg-center relative `
     return (
         <header className={CONTAINER_CLASS_NAME + (className || '')}>
-            <div className={`absolute inset-0 bg-[${color || 'rgba(191,37,37,0.1)'}] bg-[url('/images/ibs-meeting.jpg')] bg-top bg-cover`}></div>
             <NavBar active={active} locale={locale} />
-            {
+            {/* {
                 !navBarOnly && (
                     <section className="bg-coolGray-800 text-coolGray-100">
                         <div
@@ -36,7 +35,7 @@ const HomeHeader: React.FC<Props> = ({ active, locale, className, title, navBarO
                         </div>
                     </section>
                 )
-            }
+            } */}
 
         </header>
     )

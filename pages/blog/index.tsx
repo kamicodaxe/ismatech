@@ -18,7 +18,7 @@ const Blog: React.FC<Props> = ({ articles }) => {
 
     return (
         <Layout locale={locale as string} title={s?.title} desc={s?.desc}>
-            <Header locale={locale as string} title="Blog" active='blog' className="bg-[url(https://source.unsplash.com/ip9R11FMbV8/1200x720)]" />
+            <Header locale={locale as string} title="Blog" active='blog' className="" />
 
             <BlogPreview locale={locale as string} articles={articles} />
 

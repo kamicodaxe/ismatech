@@ -15,7 +15,7 @@ const Contact: NextPage<Props> = ({ data }) => {
 
   return (
     <Layout locale={locale as string} title={s.title} desc={s.desc}>
-      <Header locale={locale as string} title="Contact" className="bg-[url(https://source.unsplash.com/xhGMQ_nYWqU/1280x)]" active='contact' />
+      <Header locale={locale as string} title="Contact" className="" active='contact' />
       <section className="my-12 bg-coolGray-800 text-coolGray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">

@@ -21,7 +21,7 @@ const Blog: React.FC<Props> = ({ article, articles, slug }) => {
 
     return (
         <Layout locale={locale as string} title={article?.title || s.title} imgSrc={article?.featuredImage?.node?.sourceUrl} desc={article?.excerpt?.replaceAll('<p>', "").replaceAll('</p>', "") || s.desc}>
-            <Header locale={locale as string} title={article?.title} active='blog' className="bg-[url(https://source.unsplash.com/ip9R11FMbV8/1200x720)]" />
+            <Header locale={locale as string} title={article?.title} active='blog' className="" />
             <section className=" text-gray-800">
                 <div className="grid grid-cols-3 relative">
 

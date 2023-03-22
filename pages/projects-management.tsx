@@ -16,8 +16,8 @@ const ProjectsManagement: NextPage<Props> = ({ data }) => {
 
   return (
     <Layout locale={locale as string} title={s.title} desc={s.desc}>
-      <Header locale={locale as string} title="Projects Management" className="bg-[url(https://source.unsplash.com/xhGMQ_nYWqU/1280x)]" active='projects-management' />
-      <IPM locale={locale as string} />
+      <Header locale={locale as string} title="Projects Management" className="" active='projects-management' />
+      <IPM extended locale={locale as string} />
     </Layout>
   )
 }

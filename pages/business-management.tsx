@@ -16,8 +16,8 @@ const BusinessManagement: NextPage<Props> = ({ data }) => {
 
   return (
     <Layout locale={locale as string} title={s.title} desc={s.desc}>
-      <Header locale={locale as string} title="Business Management" className="bg-[url(https://source.unsplash.com/xhGMQ_nYWqU/1280x)]" active='business-management' />
-      <IBM locale={locale as string} />
+      <Header locale={locale as string} title="Business Management" className="" active='business-management' />
+      <IBM extended locale={locale as string} />
     </Layout>
   )
 }

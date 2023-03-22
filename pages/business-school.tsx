@@ -16,8 +16,8 @@ const BusinessSchool: NextPage<Props> = ({ data }) => {
 
   return (
     <Layout locale={locale as string} title={s.title} desc={s.desc}>
-      <Header locale={locale as string} title="Business School" className="bg-[url(https://source.unsplash.com/xhGMQ_nYWqU/1280x)]" active='business-school' />
-      <Courses locale={locale as string} />
+      <Header locale={locale as string} title="Business School" className="" active='business-school' />
+      <Courses extended locale={locale as string} />
     </Layout>
   )
 }
