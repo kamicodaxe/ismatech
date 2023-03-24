@@ -58,13 +58,13 @@ const routes = [
         },
         path: "/about"
     },
-    {
-        name: {
-            en: "Blog",
-            fr: "Contact",
-        },
-        path: "/contact"
-    }
+    // {
+    //     name: {
+    //         en: "Blog",
+    //         fr: "Contact",
+    //     },
+    //     path: "/contact"
+    // }
 ]
 
 const NavBar: React.FC<Props> = ({ active, locale }) => {
