@@ -23,7 +23,7 @@ const Layout: React.FC<Props> = ({ children, locale, title, desc, hideFooter, im
     const siteName = isFr ? "ISMATECH, L'essentiel du conseil en management" : "ISMATECH, L'essentiel du conseil en management"
 
     return (
-        <div>
+        <div className="">
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={desc} />

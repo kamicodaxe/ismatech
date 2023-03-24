@@ -10,7 +10,7 @@ const Departments: React.FC<Props> = ({ locale }) => {
     const s = strings[lang]
 
     return (
-        <section className="mx-auto py-10 px-4 w-full max-w-7xl bg-white text-gray-800 section-base">
+        <section className="mx-auto py-10 px-4 w-full max-w-7xl text-gray-800 section-base">
             <div className="flex flex-col items-center space-y-12">
                 {/* :PARTNERS LOGOS */}
                 <div className="grid grid-cols-4 gap-6">

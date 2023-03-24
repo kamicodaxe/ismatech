@@ -7,7 +7,7 @@ const CTA: React.FC<{}> = ({ }) => {
     const s = strings[lang]
 
     return (
-        <section className="py-6 bg-primary dark:bg-violet-400 dark:text-gray-900">
+        <section className="py-6 bg-primary">
             <div className="container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 md:px-24 xl:px-48">
                 {/* :TITLE CONTAINER */}
                 <div className="mx-auto max-w-3xl space-y-3 text-center">

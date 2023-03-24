@@ -12,7 +12,7 @@ const IEM: React.FC<Props> = ({ locale, extended }) => {
     const s = strings[lang]
 
     return (
-        <section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100 section-base">
+        <section className="m-4 md:m-8 section-base">
 
             {/* :TITLE CONTAINER */}
             <div className={`mx-auto max-w-3xl space-y-3 text-center ` + (extended ? 'py-16' : '')}>

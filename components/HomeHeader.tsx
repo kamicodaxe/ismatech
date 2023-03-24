@@ -14,7 +14,7 @@ const HomeHeader: React.FC<Props> = ({ active, locale }) => {
     const s = strings[lang]
 
     return (
-        <header className="bg-cover bg-coolGray-800 text-coolGray-100  relative">
+        <header className="bg-cover bg-coolGray-800 text-coolGray-100 relative">
             {/* <div className="absolute inset-0 bg-[rgba(0,0,0,0.6)]"></div> */}
             <NavBar active={active} locale={locale} />
 
@@ -43,30 +43,30 @@ const HomeHeader: React.FC<Props> = ({ active, locale }) => {
 
                         <div className="max-w-lg lg:mx-12 lg:order-2 lg:mt-16">
                             <div className='w-2' />
-                            <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-6xl">
+                            <h1 className="text-3xl font-semibold tracking-wide text-gray-800 lg:text-6xl">
                                 L&apos;essentiel du conseil en management
                             </h1>
                             <Slider className='max-h-48'>
                                 <Slide index={0}>
-                                    {/* <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
+                                    {/* <h1 className="text-3xl font-semibold tracking-wide text-gray-800 lg:text-5xl">
                                         L'essentiel du conseil en management
                                     </h1> */}
-                                    <p className="content-3 mt-4 text-gray-600 dark:text-gray-300">
+                                    <p className="content-3 mt-4 text-gray-600">
                                         Le développement de l&apos;Afrique ne se fera que par la volonté, les compétences et le Dynamisme des Africains eux-mêmes
                                     </p>
                                 </Slide>
                                 <Slide index={1}>
-                                    <p className="content-3 mt-4 text-gray-600 dark:text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
+                                    <p className="content-3 mt-4 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
                                 </Slide>
                                 <Slide index={2}>
-                                    <p className="content-3 mt-4 text-gray-600 dark:text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
+                                    <p className="content-3 mt-4 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
                                 </Slide>
                                 <Slide index={3}>
-                                    <p className="content-3 mt-4 text-gray-600 dark:text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
+                                    <p className="content-3 mt-4 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
                                 </Slide>
                             </Slider>
 
-                            {/* <p className="content-3 mt-4 text-gray-600 dark:text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p> */}
+                            {/* <p className="content-3 mt-4 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p> */}
                             {/* <div className="mt-6">
                                 <a href="#" className="px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">Download from App Store</a>
                             </div> */}

@@ -45,15 +45,15 @@ a {
   }
   
   .title-3 {
-    @apply text-xl font-semibold text-gray-900 capitalize dark:text-white
+    @apply text-xl font-semibold text-gray-900 capitalize
   }
 
   .content-3 {
-    @apply text-gray-500 dark:text-gray-300 leading-relaxed
+    @apply text-gray-500 leading-relaxed
   }
 
   .content-2 {
-    @apply text-black  dark:text-gray-300  leading-relaxed text-base
+    @apply text-black   leading-relaxed text-base
   }
 
   .content-2 li {

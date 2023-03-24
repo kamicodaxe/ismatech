@@ -12,7 +12,7 @@ const Courses: React.FC<Props> = ({ locale, extended }) => {
     const s = strings[lang]
 
     return (
-        <section className="dark:bg-gray-800 dark:text-gray-100 section-base">
+        <section className="section-base">
 
             {/* :TITLE CONTAINER */}
             <div className={`mx-auto max-w-3xl space-y-3 text-center ` + (extended ? 'py-16' : '')}>
@@ -27,7 +27,7 @@ const Courses: React.FC<Props> = ({ locale, extended }) => {
 
             <div className="container flex flex-col-reverse mx-auto lg:flex-row">
 
-                <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-400 dark:text-gray-900">
+                <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5">
                     {
                         s.items.map(item => (
                             <div key={item.title} className="flex space-x-2 sm:space-x-4">
@@ -43,9 +43,9 @@ const Courses: React.FC<Props> = ({ locale, extended }) => {
                     }
                     <LearnMore locale={locale} href='/business-school' />
                 </div>
-                <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-800">
+                <div className="lg:w-1/2 xl:w-3/5">
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
-                        <img src="/images/ibs.jpg" alt="" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+                        <img src="/images/ibs.jpg" alt="" className="rounded-lg shadow-lg aspect-video sm:min-h-96" />
                     </div>
                 </div>
             </div>
