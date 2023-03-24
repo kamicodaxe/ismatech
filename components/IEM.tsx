@@ -1,10 +1,12 @@
 import { useMemo } from "react"
+import LearnMore from "./LearnMore"
 
 interface Props {
     locale: string
+    extended?: boolean
 }
 
-const IEM: React.FC<Props> = ({ locale }) => {
+const IEM: React.FC<Props> = ({ locale, extended }) => {
 
     const lang = useMemo(() => (locale || '').toLowerCase().includes('fr'), [locale]) ? 'fr' : 'en'
     const s = strings[lang]
@@ -13,14 +15,14 @@ const IEM: React.FC<Props> = ({ locale }) => {
         <section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100 section-base">
 
             {/* :TITLE CONTAINER */}
-            <div className="mx-auto max-w-3xl space-y-3 text-center">
+            <div className={`mx-auto max-w-3xl space-y-3 text-center ` + (extended ? 'py-16' : '')}>
                 {/* ::Title */}
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-wide relative before:w-16 before:h-16  ">
                     <span className="h-12 w-12 bg-primary absolute rounded-full left-0" />
                     ISMATECH <span className="text-primary">Events</span> Management
                 </h2>
                 {/* ::Text */}
-                <p className="text-sm sm:text-base text-gray-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+                <p className="text-sm sm:text-base text-gray-700">Le succès à l&apos;échelle mondiale grâce à Ismatech Events Management : Des solutions professionnelles pour les réunions internationales, les événements sportifs et culturels !</p>
             </div>
 
             <div className="container grid justify-center gap-4 mx-auto lg:grid-cols-3">
@@ -30,6 +32,7 @@ const IEM: React.FC<Props> = ({ locale }) => {
                             <img className="rounded-md" src={item.imageSrc} alt="" />
                             <h2 className="title-3 mb-4">{item.title}</h2>
                             <p className="content-3 flex-1 mb-4">{item.body}</p>
+                            <LearnMore href="/events-management/slug" locale={locale} />
                         </div>
                     ))
                 }
@@ -68,17 +71,17 @@ const strings = {
         items: [
             {
                 title: "Organisation des rencontres Internationales",
-                body: "C’est là que nous déciderons de la technologie à utiliser pour votre projet de conception Web ou d’application mobile.",
+                body: "L'organisation de réunions internationales peut être une tâche intimidante, mais avec une planification et une coordination adéquates, elle peut être couronnée de succès. ",
                 imageSrc: "/images/hilton.jpg"
             },
             {
                 title: "Initiation et organisation sportives",
-                body: "Après analyse du projet, nous produirons un prototype du projet qui sera validé par le client avant d'aller plus loin.",
+                body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id erat et mauris feugiat porttitor eu id justo. Cras efficitur gravida ultricies. Quisque eget ex vel tortor euismod viverra.",
                 imageSrc: "/images/olembe.jpg"
             },
             {
                 title: "Initiation et Organisation de Rencontres culturelles",
-                body: "Notre partie préférée, à ce stade, nous allons coder votre site Web / application.",
+                body: "Ut congue non lectus a fringilla. Praesent egestas aliquam ipsum non tincidunt. Donec vel placerat dui. Duis facilisis mauris sed tellus rutrum, auctor luctus ipsum ornare.",
                 imageSrc: "/images/musee.jpg"
             },
         ]

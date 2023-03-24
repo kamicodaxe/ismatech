@@ -12,12 +12,14 @@ const CTA: React.FC<{}> = ({ }) => {
                 {/* :TITLE CONTAINER */}
                 <div className="mx-auto max-w-3xl space-y-3 text-center">
                     {/* ::Title */}
-                    <h2 className="text-3xl sm:text-4xl font-bold tracking-wide relative before:w-16 before:h-16  ">
+                    <h2 className="text-3xl sm:text-4xl font-bold tracking-wide relative before:w-16 before:h-16 pb-8 ">
                         <span className="h-12 w-12 bg-white absolute rounded-full left-0" />
-                        Besoin d&apos;un <span className="text-white">rendez-vous?</span>
+                        Prenez <span className="text-white">rendez-vous?</span> dès maintenant!
                     </h2>
                     {/* ::Text */}
-                    <p className="text-sm sm:text-base text-gray-100 leading-8">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+                    <p className="text-sm sm:text-base text-gray-100 leading-8">
+                        Notre équipe d&apos;experts est prête à vous fournir les meilleurs conseils et l&apos;expertise nécessaire pour vous aider à atteindre le succès. Prenez rendez-vous dès aujourd&apos;hui et obtenez le soutien dont vous avez besoin pour réussir.
+                    </p>
                 </div>
 
                 <button type="button"

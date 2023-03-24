@@ -21,7 +21,7 @@ const WhyUs: React.FC<Props> = ({ locale, extended }) => {
                         Pourquoi <span className="text-primary">ISMATECH</span>
                     </h2>
                     {/* ::Text */}
-                    <p className="text-sm sm:text-base text-gray-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+                    <p className="text-sm sm:text-base text-gray-700">Libérez votre potentiel professionnel avec ISMATECH - Transformez votre entreprise et atteignez de nouveaux sommets !</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
@@ -59,28 +59,28 @@ const strings = {
     'en': {
         items: [
             {
-                title: "Project Analysis",
-                body: "This is where we will decide which technology sack to use for your web design or mobile application project."
+                title: "Priorité",
+                body: "Notre partenariat repose avant tout sur la confiance. C'est pourquoi nous vous proposons un projet concret, des conseils pratiques et une approche analytique adaptée à votre environnement unique. Nous voulons vous aider à atteindre vos objectifs plus rapidement et plus efficacement, afin que vous puissiez vous concentrer sur votre cœur de métier. Travaillons ensemble pour créer un partenariat fructueux et durable."
             },
             {
-                title: "Prototyping",
-                body: "After analysing the project, we will produce a prototype of the project that will be validated by the client before we go further."
+                title: "Objectivité",
+                body: "Notre vision est axée sur la fourniture d'un travail de qualité avec un objectif unique : vous fournir une évaluation honnête et impartiale de la situation actuelle de votre entreprise. Nous nous engageons à fournir nos services sans aucun parti pris personnel et en gardant toujours à l'esprit votre meilleur intérêt. Grâce à notre expertise et à notre dévouement, nous nous efforçons de faire en sorte que vous disposiez des informations les plus précises et les plus récentes pour prendre des décisions en toute connaissance de cause."
             },
             {
-                title: "Coding",
-                body: "Our favourite part, At this point, we will code your software to life."
+                title: "Disponibilité",
+                body: "A votre service, le Cabinet Ismatech s'engage à fournir un audit complet de la situation actuelle de votre entreprise et à mener à bien notre mission dans les délais impartis. Nous nous efforçons de répondre à vos attentes et d'atteindre vos objectifs commerciaux. Notre équipe de professionnels expérimentés se consacre à la fourniture d'un service de la plus haute qualité et à l'obtention des meilleurs résultats dans les meilleurs délais."
             },
             {
-                title: "Content Creation",
-                body: "At this point, we will create SEO ready content for your website/application. Here we will need all the documentation the client can provide to us."
+                title: "Originalité",
+                body: "Chez ISMATECH, nous mettons tout en œuvre pour que vos projets se distinguent par leur caractère unique et attrayant. Nous garantissons que tous nos services sont imprégnés de singularité afin que chacun de vos projets soit un chef-d'œuvre unique. Laissez-nous vous aider à créer quelque chose de spécial !"
             },
             {
-                title: "Quality Check",
-                body: "This is a critical step of our work. The whole project is thouroughly reviewed before final deployment."
+                title: "Flexibilité",
+                body: "Chez ISMATECH, nous comprenons que les besoins de votre entreprise sont en constante évolution. C'est pourquoi nous nous engageons à vous fournir les solutions les plus récentes, adaptées à vos besoins spécifiques. Notre capacité à écouter et à répondre rapidement à vos demandes, ainsi que notre connaissance des dernières tendances du marché et des avancées techniques, vous garantissent le plus haut niveau de satisfaction. Laissez-nous être votre partenaire pour le succès."
             },
             {
-                title: "Deployment",
-                body: "Horraay. Your project is now battle tested and deployed"
+                title: "Mobilité",
+                body: "Notre mobilité nous permet d'explorer les principales villes africaines et d'être les témoins directs de leur processus de développement. Nous nous engageons à vous fournir le meilleur service et la meilleure assistance possibles lors de votre voyage dans ces destinations dynamiques et en constante évolution. Laissez-nous vous aider à tirer le meilleur parti de votre entreprise en Afrique !"
             }
         ]
     },
@@ -88,27 +88,27 @@ const strings = {
         items: [
             {
                 title: "Priorité",
-                body: "C’est là que nous déciderons de la technologie à utiliser pour votre projet de conception Web ou d’application mobile."
+                body: "Notre partenariat repose avant tout sur la confiance. C'est pourquoi nous vous proposons un projet concret, des conseils pratiques et une approche analytique adaptée à votre environnement unique. Travaillons ensemble pour créer un partenariat fructueux et durable."
             },
             {
                 title: "Objectivité",
-                body: "Après analyse du projet, nous produirons un prototype du projet qui sera validé par le client avant d'aller plus loin."
+                body: "Notre vision est axée sur la fourniture d'un travail de qualité avec un objectif unique : vous fournir une évaluation honnête et impartiale de la situation actuelle de votre entreprise. Nous nous engageons à fournir nos services sans aucun parti pris personnel et en gardant toujours à l'esprit votre meilleur intérêt."
             },
             {
                 title: "Disponibilité",
-                body: "À ce stade, nous créerons du contenu pour votre projet. Ici, nous aurons besoin de toute la documentation que le client peut nous fournir."
+                body: "A votre service, le Cabinet Ismatech s'engage à fournir un audit complet de la situation actuelle de votre entreprise et à mener à bien notre mission dans les délais impartis. Nous nous efforçons de répondre à vos attentes et d'atteindre vos objectifs commerciaux."
             },
             {
                 title: "Originalité",
-                body: "Ici, votre site Web ou votre application mobile fait l’objet d’un examen approfondi. Après la phase de contrôle de la qualité, votre projet sera prêt pour la production."
+                body: "Chez ISMATECH, nous mettons tout en œuvre pour que vos projets se distinguent par leur caractère unique et attrayant. Nous garantissons que tous nos services sont imprégnés de singularité afin que chacun de vos projets soit un chef-d'œuvre unique. Laissez-nous vous aider à créer quelque chose de spécial !"
             },
             {
                 title: "Flexibilité",
-                body: "Horraah. Votre projet est maintenant disponible au public."
+                body: "Chez ISMATECH, nous comprenons que les besoins de votre entreprise sont en constante évolution. C'est pourquoi nous nous engageons à vous fournir les solutions les plus récentes, adaptées à vos besoins spécifiques. Laissez-nous être votre partenaire pour le succès."
             },
             {
                 title: "Mobilité",
-                body: "Horraah. Votre projet est maintenant disponible au public."
+                body: "Notre mobilité nous permet d'explorer les principales villes africaines et d'être les témoins directs de leur processus de développement. Laissez-nous vous aider à tirer le meilleur parti de votre entreprise en Afrique !"
             }
         ]
     }

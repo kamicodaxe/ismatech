@@ -1,4 +1,5 @@
 import { useMemo } from "react"
+import LearnMore from "./LearnMore"
 
 interface Props {
     locale: string
@@ -21,7 +22,7 @@ const IBM: React.FC<Props> = ({ locale, extended }) => {
                     Ismatech <span className="text-primary">Business</span> Management
                 </h2>
                 {/* ::Text */}
-                <p className="text-sm sm:text-base text-gray-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+                <p className="text-sm sm:text-base text-gray-700">Débloquez le succès professionnel avec Ismatech Business Management : Analyse Swot, vision, stratégies, suivi et rentabilité personnelle.</p>
             </div>
 
             <div className="container flex flex-col-reverse mx-auto lg:flex-row">
@@ -46,6 +47,7 @@ const IBM: React.FC<Props> = ({ locale, extended }) => {
                             </div>
                         ))
                     }
+                    <LearnMore locale={locale} href='/business-management' />
                 </div>
 
             </div>
@@ -77,21 +79,17 @@ const strings = {
     'fr': {
         items: [
             {
-                title: "Management & Strategies des Entreprises",
-                body: "Le management et les strategies d'entreprises est une filière destinée aux jeunes cadres et porteurs"
+                title: "Analyse SWOT des entreprises",
+                body: `L'analyse SWOT d'ISMATECH permet aux professionnels d'identifier et d'évaluer les forces, les faiblesses, les opportunités et les menaces de leurs entreprises. Notre équipe d'experts vous fournira une évaluation précise et complète des performances actuelles et du potentiel futur de l'entreprise.`
             },
             {
-                title: "Gestions des Resources Humaines",
-                body: "Après analyse du projet, nous produirons un prototype du projet qui sera validé par le client avant d'aller plus loin."
+                title: "Conseil sur la vision et les stratégies",
+                body: "Chez ISMATECH, nous fournissons des services de conseil professionnel pour vous aider à définir et à développer une vision et une stratégie efficaces pour atteindre vos objectifs souhaités. Contactez-nous dès aujourd'hui pour commencer à planifier votre avenir."
             },
             {
-                title: "Marketing et Veille Strategique",
-                body: "Notre partie préférée, à ce stade, nous allons coder votre site Web / application."
-            },
-            {
-                title: "Comptabilité Informatisée de Gestion",
-                body: "À ce stade, nous créerons du contenu pour votre projet. Ici, nous aurons besoin de toute la documentation que le client peut nous fournir."
-            },
+                title: "Elaboration et mise en oeuvre des organigrammes",
+                body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque."
+            }
         ]
     }
 }

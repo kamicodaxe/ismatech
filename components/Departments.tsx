@@ -16,24 +16,24 @@ const Departments: React.FC<Props> = ({ locale }) => {
                 <div className="grid grid-cols-4 gap-6">
 
                     {/* ::Partner 1 -> ALL */}
-                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100">
+                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 hover:text-primary transition-all cursor-pointer">
                         {/* <img src="https://fancytailwind.com/static/all-limitless-logo-a2bc67b04c70cbdaf47b69769ee38c39.svg" alt="" className="max-h-16 opacity-80" /> */}
-                        <p className="text-7xl font-bold leading-10 px-16 text-gray-900">IBS</p>
+                        <p className="text-7xl font-bold leading-10 px-16">IBS</p>
                     </div>
 
                     {/* ::Partner 2 -> Stellantis */}
-                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100">
-                        <p className="text-7xl font-bold leading-10 px-16 text-gray-900">IBM</p>
+                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 hover:text-primary transition-all cursor-pointer">
+                        <p className="text-7xl font-bold leading-10 px-16">IBM</p>
                     </div>
 
                     {/* ::Partner 3 -> Google */}
-                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100">
-                        <p className="text-7xl font-bold leading-10 px-16 text-gray-900">IPM</p>
+                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 hover:text-primary transition-all cursor-pointer">
+                        <p className="text-7xl font-bold leading-10 px-16">IPM</p>
                     </div>
 
                     {/* ::Partner 4 -> Microsoft */}
-                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100">
-                        <p className="text-7xl font-bold leading-10 px-16 text-gray-900">IEM</p>
+                    <div className="col-span-3 sm:col-span-2 lg:col-span-1 py-12 px-5 flex justify-center items-center bg-gray-100 hover:text-primary transition-all cursor-pointer">
+                        <p className="text-7xl font-bold leading-10 px-16">IEM</p>
                     </div>
 
                 </div>

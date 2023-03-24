@@ -1,34 +1,34 @@
 import type { GetStaticProps, NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
-import Header from '../components/Header'
-import IPM from '../components/IPM'
-import Layout from '../components/Layout'
+import Header from '../../components/Header'
+import IEM from '../../components/IEM'
+import Layout from '../../components/Layout'
 
 interface Props {
   data: any[]
 }
 
-const ProjectsManagement: NextPage<Props> = ({ data }) => {
+const BusinessManagement: NextPage<Props> = ({ data }) => {
   const { locale } = useRouter()
   const lang = useMemo(() => (locale || '').toLowerCase().includes('fr'), [locale]) ? 'fr' : 'en'
   const s = strings[lang]
 
   return (
     <Layout locale={locale as string} title={s.title} desc={s.desc}>
-      <Header locale={locale as string} title="Projects Management" className="" active='projects-management' />
-      <IPM extended locale={locale as string} />
+      <Header locale={locale as string} title="Business Management" className="" active='events-management' />
+      <IEM extended locale={locale as string} />
     </Layout>
   )
 }
 
 const strings = {
   'en': {
-    'title': 'Projects Management, ISMATECH',
-    'desc': 'Projects Management, ISMATECH',
+    'title': 'Business Management, ISMATECH',
+    'desc': 'Business Management, ISMATECH',
     'subtitle': '',
-    'contact': 'ProjectsManagement us',
-    'form': 'ProjectsManagement form',
+    'contact': 'BusinessManagement us',
+    'form': 'BusinessManagement form',
     'name': 'Full name',
     'phone': 'Phone number',
     'email': 'Email address',
@@ -39,8 +39,8 @@ const strings = {
     subjects: ["website", "Mobile application", "Website and mobile application", "Wordpress", "Entreprise", "Intenships", "Something else"]
   },
   'fr': {
-    'title': 'Projects Management, ISMATECH',
-    'desc': 'Projects Management, ISMATECH',
+    'title': 'Business Management, ISMATECH',
+    'desc': 'Business Management, ISMATECH',
     'subtitle': '',
     'contact': 'Contactez-nous',
     'form': 'Formulaire de contact',
@@ -64,4 +64,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 
-export default ProjectsManagement
+export default BusinessManagement

@@ -1,5 +1,5 @@
-import Link from "next/link"
 import { useMemo } from "react"
+import LearnMore from "./LearnMore"
 
 interface Props {
     locale: string
@@ -22,7 +22,7 @@ const IPM: React.FC<Props> = ({ locale, extended }) => {
                     ISMATECH <span className="text-primary">Projects</span> Management
                 </h2>
                 {/* ::Text */}
-                <p className="text-sm sm:text-base text-gray-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+                <p className="text-sm sm:text-base text-gray-700">Libérez le potentiel de vos projets d&apos;entreprise grâce aux services professionnels de gestion de projets d&apos;ISMATECH !</p>
             </div>
 
             <div className="container grid justify-center gap-4 mx-auto lg:grid-cols-2 xl:grid-cols-4">
@@ -32,14 +32,7 @@ const IPM: React.FC<Props> = ({ locale, extended }) => {
                             <img src={item.imageSrc} alt="" />
                             <h3 className="title-3">{item.title}</h3>
                             <p className="flex-1 content-3 mb-4">{item.body}</p>
-                            <Link className="inline-flex items-center space-x-2 text-sm dark:text-violet-400" href="/ismatech-project-management/">
-                                <div className="inline-flex items-center space-x-2 text-sm dark:text-violet-400 cursor-pointer">
-                                    <span>Learn More</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                        <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </Link>
+                            <LearnMore href="/projects-management/slug" locale={locale} />
                         </div>
                     ))
                 }

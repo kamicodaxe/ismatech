@@ -1,4 +1,5 @@
 import { useMemo } from "react"
+import LearnMore from "./LearnMore"
 
 interface Props {
     locale: string
@@ -21,7 +22,7 @@ const Courses: React.FC<Props> = ({ locale, extended }) => {
                     Ismatech <span className="text-primary">Business</span> School
                 </h2>
                 {/* ::Text */}
-                <p className="text-sm sm:text-base text-gray-700">Eaque totam placeat fuga neque quam vero. Harum nesciunt voluptate quidem, repudiandae nihil repellendus praesentium impedit sequi non modi ipsa! Libero, nostrum?</p>
+                <p className="text-sm sm:text-base text-gray-700">Réussir professionnellement avec Ismatech Business School : Des opportunités pour les entreprises et les demandeurs d&apos;emploi !</p>
             </div>
 
             <div className="container flex flex-col-reverse mx-auto lg:flex-row">
@@ -40,6 +41,7 @@ const Courses: React.FC<Props> = ({ locale, extended }) => {
                             </div>
                         ))
                     }
+                    <LearnMore locale={locale} href='/business-school' />
                 </div>
                 <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-800">
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
@@ -55,20 +57,16 @@ const strings = {
     'en': {
         items: [
             {
-                title: "Project Analysis",
-                body: "This is where we will decide which technology sack to use for your web design or mobile application project."
+                title: "Management & Strategies des Entreprises",
+                body: `ISMATECH BUSINESS SCHOOL propose un programme de formation complet pour les entreprises et les demandeurs d'emploi qui souhaitent acquérir un avantage concurrentiel dans le domaine du "Management et des stratégies d'entreprise".` // Parfaite pour les chefs de projet souhaitant créer leur propre entreprise, cette formation apporte les connaissances et compétences essentielles pour créer et gérer une entreprise avec succès. En mettant l'accent sur l'application pratique et les scénarios du monde réel, notre programme dote les participants des outils nécessaires pour devenir un chef d'entreprise et un entrepreneur efficace.
             },
             {
-                title: "Prototyping",
-                body: "After analysing the project, we will produce a prototype of the project that will be validated by the client before we go further."
+                title: "Gestions des Resources Humaines",
+                body: "ISMATECH BUSINESS SCHOOL propose une formation complète en gestion des ressources humaines. Grâce à nos cours complets, vous serez en mesure de gérer efficacement le personnel et les processus de recrutement, de fournir une formation et une gestion de carrière efficaces, de mener des évaluations, et bien plus encore."
             },
             {
-                title: "Coding",
-                body: "Our favourite part, At this point, we will code your software to life."
-            },
-            {
-                title: "Content Creation",
-                body: "At this point, we will create SEO ready content for your website/application. Here we will need all the documentation the client can provide to us."
+                title: "Marketing et Veille Strategique",
+                body: "ISMATECH BUSINESS SCHOOL est votre partenaire dans le développement et l'amélioration de votre sens du marketing et de l'intelligence stratégique. Nous proposons des programmes de formation complets aux entreprises et aux demandeurs d'emploi, afin de les aider à mieux comprendre le paysage concurrentiel et les stratégies et tactiques nécessaires pour réussir. "
             },
         ]
     },
@@ -76,19 +74,15 @@ const strings = {
         items: [
             {
                 title: "Management & Strategies des Entreprises",
-                body: "Le management et les strategies d'entreprises est une filière destinée aux jeunes cadres et porteurs"
+                body: `ISMATECH BUSINESS SCHOOL propose un programme de formation complet pour les entreprises et les demandeurs d'emploi qui souhaitent acquérir un avantage concurrentiel dans le domaine du "Management et des stratégies d'entreprise".` // Parfaite pour les chefs de projet souhaitant créer leur propre entreprise, cette formation apporte les connaissances et compétences essentielles pour créer et gérer une entreprise avec succès. En mettant l'accent sur l'application pratique et les scénarios du monde réel, notre programme dote les participants des outils nécessaires pour devenir un chef d'entreprise et un entrepreneur efficace.
             },
             {
                 title: "Gestions des Resources Humaines",
-                body: "Après analyse du projet, nous produirons un prototype du projet qui sera validé par le client avant d'aller plus loin."
+                body: "ISMATECH BUSINESS SCHOOL propose une formation complète en gestion des ressources humaines. Grâce à nos cours complets, vous serez en mesure de gérer efficacement le personnel et les processus de recrutement, de fournir une formation et une gestion de carrière efficaces, de mener des évaluations, et bien plus encore."
             },
             {
                 title: "Marketing et Veille Strategique",
-                body: "Notre partie préférée, à ce stade, nous allons coder votre site Web / application."
-            },
-            {
-                title: "Comptabilité Informatisée de Gestion",
-                body: "À ce stade, nous créerons du contenu pour votre projet. Ici, nous aurons besoin de toute la documentation que le client peut nous fournir."
+                body: "ISMATECH BUSINESS SCHOOL est votre partenaire dans le développement et l'amélioration de votre sens du marketing et de l'intelligence stratégique. Nous proposons des programmes de formation complets aux entreprises et aux demandeurs d'emploi, afin de les aider à mieux comprendre le paysage concurrentiel et les stratégies et tactiques nécessaires pour réussir. "
             },
         ]
     }

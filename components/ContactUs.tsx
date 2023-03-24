@@ -2,15 +2,30 @@ import { useMemo } from "react"
 
 interface Props {
     locale: string
+    extended?: boolean
 }
 
-const ContactUs: React.FC<Props> = ({ locale }) => {
+const ContactUs: React.FC<Props> = ({ locale, extended }) => {
 
     const lang = useMemo(() => (locale || '').toLowerCase().includes('fr'), [locale]) ? 'fr' : 'en'
     const s = strings[lang]
 
     return (
-        <section className="text-gray-600 body-font relative">
+        <section className="text-gray-900 body-font relative">
+
+            {/* :TITLE CONTAINER */}
+            <div className={`mx-auto max-w-3xl space-y-3 text-center ` + (extended ? 'py-16' : '')}>
+                {/* ::Title */}
+                <h2 className="text-3xl sm:text-4xl font-bold tracking-wide relative before:w-16 before:h-16  ">
+                    <span className="h-12 w-12 bg-primary absolute rounded-full left-0" />
+                    Contactez <span className="text-primary">Nous</span>
+                </h2>
+                {/* ::Text */}
+                <p className="text-sm sm:text-base text-gray-700">
+                    Notre équipe d&apos;experts est prête à vous fournir les meilleurs conseils et l&apos;expertise nécessaire pour vous aider à atteindre le succès.
+                </p>
+            </div>
+
             <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe width="100%" height="100%" className="absolute inset-0" frameBorder="0" title="map" marginHeight={0} marginWidth={0} scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d427.5756751657299!2d11.497687022417402!3d3.8863353816348445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf15b89c23d1%3A0x1e9b2b3f1f015c97!2sMassao%20Palace%20Hotel%2C%20Yaound%C3%A9!5e0!3m2!1sfr!2scm!4v1679509806535!5m2!1sfr!2scm"
@@ -39,10 +54,8 @@ const ContactUs: React.FC<Props> = ({ locale }) => {
                     </div>
                 </div>
                 <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-                    <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-                    <p className="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
                     <div className="relative mb-4">
-                        <label className="leading-7 text-sm text-gray-600">Name</label>
+                        <label className="leading-7 text-sm text-gray-600">Nom(s) et Prenom(s) </label>
                         <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                     </div>
                     <div className="relative mb-4">
@@ -50,11 +63,11 @@ const ContactUs: React.FC<Props> = ({ locale }) => {
                         <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                     </div>
                     <div className="relative mb-4">
-                        <label className="leading-7 text-sm text-gray-600">Message</label>
+                        <label className="leading-7 text-sm text-gray-600">Envoyez</label>
                         <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
                     <button className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary rounded text-lg">Button</button>
-                    <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+                    {/* <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p> */}
                 </div>
             </div>
         </section>

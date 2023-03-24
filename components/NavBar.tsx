@@ -32,18 +32,25 @@ const routes = [
     },
     {
         name: {
-            en: "Blog",
+            en: "Projects Management",
             fr: "Projects Management",
         },
         path: "/projects-management"
     },
     {
         name: {
-            en: "Blog",
-            fr: "Actualités",
+            en: "Events Management",
+            fr: "Events Management",
         },
-        path: "/blog"
+        path: "/events-management"
     },
+    // {
+    //     name: {
+    //         en: "Blog",
+    //         fr: "Actualités",
+    //     },
+    //     path: "/blog"
+    // },
     {
         name: {
             en: "About",
