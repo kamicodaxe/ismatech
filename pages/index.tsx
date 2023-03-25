@@ -20,7 +20,7 @@ const Home: NextPage<IHomePageData> = ({ data: { projects, posts } }) => {
   const desc = "L'essentiel du conseil en management"
 
   return (
-    <Layout locale={locale as string} title={title} desc={desc}>
+    <Layout locale={locale as string} title={title} desc={desc} imgSrc="/images/ibs.jpg">
       <HomeHeader locale={locale as string} active="" />
       <Departments locale={locale as string} />
       <WhyUs locale={locale as string} />
